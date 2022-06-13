@@ -1,4 +1,3 @@
-# filename: tests/login_test.py
 import pytest
 from pages import login_page
 
@@ -9,10 +8,10 @@ def login(driver):
 
 
 def test_valid_credentials(login):
-    login.with_("tomsmith", "SuperSecretPassword!")
+    login.with_("luism", "123")
     assert login.success_message_present()
 
 
 def test_invalid_credentials(login):
     login.with_("tomsmith", "bad password")
-    assert login.success_message_present() == False
+    assert login.failure_message_present()

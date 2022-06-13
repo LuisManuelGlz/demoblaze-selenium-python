@@ -1,4 +1,3 @@
-# filename: tests/conftest.py
 import pytest
 import os
 from selenium import webdriver
@@ -8,7 +7,7 @@ from . import config
 def pytest_addoption(parser):
     parser.addoption("--baseurl",
                      action="store",
-                     default="http://the-internet.herokuapp.com",
+                     default="https://www.demoblaze.com",
                      help="base URL for the application under test")
     parser.addoption("--browser",
                      action="store",

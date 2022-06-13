@@ -1,3 +1,2 @@
-# filename: config.py
-baseurl = ""
+baseurl = "https://www.demoblaze.com"
 browser = "chrome"
