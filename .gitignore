@@ -153,7 +153,10 @@ dmypy.json
 cython_debug/
 
 # Vendors
+/vendor/chromedriver
 /vendor/chromedriver.exe
+/vendor/geckodriver
+/vendor/geckodriver.exe
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
